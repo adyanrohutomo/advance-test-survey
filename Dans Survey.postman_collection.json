@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "b8162e5d-fe09-470d-8f0b-8d56d586097c",
+		"name": "Dans Survey",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9474681"
+	},
+	"item": [
+		{
+			"name": "Survey Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Budi\",\n    \"age\": 27,\n    \"hair\": \"black\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/survey",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"survey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Survey Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Andi\",\n    \"age\": 22,\n    \"hair\": \"black\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/survey/1",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"survey",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Survey Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:1323/survey/1",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"survey",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Survey Get Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1323/survey/2",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"survey",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Survey Get List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1323/survey",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"survey"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
